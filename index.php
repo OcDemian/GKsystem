@@ -26,50 +26,27 @@
     <a href="/main.php">Главная</a>
   </li>
   <li>
-    <a target="_blank" href="/basket.php">Корзина</a>
+    <a target="_blank" href="/stock.php">Акции</a>
   </li>
   <li>
-    <a target="_blank" href="/login.php">Авторизация</a>
+    <a target="_blank" href="/stock_detail.php">Акция подробно</a>
   </li>
   <li>
-    <a target="_blank" href="/registration.php">Регистрация</a>
+    <a target="_blank" href="/blog.php">Блог</a>
   </li>
   <li>
-    <a target="_blank" href="/news_detail.php">Новости</a>
+    <a target="_blank" href="/instructions.php">Инструкции</a>
   </li>
   <li>
-    <a target="_blank" href="/news.php">Новости детальная</a>
+    <a target="_blank" href="/instructions_detail.php">Инструкция подробно</a>
   </li>
   <li>
-    <a target="_blank" href="/personal.php">Мой кабинт</a>
+    <a target="_blank" href="/.php"></a>
   </li>
   <li>
-    <a target="_blank" href="/personal_data.php">Личные данные</a>
+    <a target="_blank" href="/contacts.php">Контакты</a>
   </li>
-  <li>
-    <a target="_blank" href="/order_history.php">История заказов</a>
-  </li>
-  <li>
-    <a target="_blank" href="/order_profile.php">Профили заказов</a>
-  </li>
-  <li>
-    <a target="_blank" href="/order_profile_edit.php">Профили заказов детальная</a>
-  </li>
-  <li>
-    <a target="_blank" href="/order_make.php">Оформление заказа</a>
-  </li>
-  <li>
-    <a target="_blank" href="/list_cat.php">Список категорий</a>
-  </li>
-  <li>
-    <a target="_blank" href="/list_tovar.php">Список товаров</a>
-  </li>
-  <li>
-    <a target="_blank" href="/detail_tovar.php">Детальная страница товара</a>
-  </li>
-  <li>
-    <a target="_blank" href="/modal.php">Модалки</a>
-  </li>
+
 </ul>
 
 <?include "footer.php";?>

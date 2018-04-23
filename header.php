@@ -41,7 +41,7 @@
       <div class="header_menu">
         <div class="container">
           <ul class="header_menu_body">
-            <li class="header_menu_body_item"><a class="header_menu_body_item_link">Главная</a></li>
+            <li class="header_menu_body_item"><a class="header_menu_body_item_link use">Главная</a></li>
             <li class="header_menu_body_item"><a class="header_menu_body_item_link">Каталог</a></li>
             <li class="header_menu_body_item"><a class="header_menu_body_item_link">Акции</a></li>
             <li class="header_menu_body_item"><a class="header_menu_body_item_link">Доставка и оплата</a></li>
