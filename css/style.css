@@ -10,6 +10,7 @@ body{
   overflow-x: hidden;
   font-family: "Proxima Nova Rg";
   margin: 0;
+	fo
   box-sizing: border-box;
 }
 
@@ -90,6 +91,10 @@ h1{
   width: 208px;
   display: inline-block;
   box-sizing: border-box;
+}
+
+.btn:hover{
+	cursor: pointer;
 }
 
 .btn_orange{
@@ -507,6 +512,144 @@ h1{
 	height: 42px;
 	left:-50px;
 	top:-21px;
+}
+
+.contacts_map_info_phone{
+	color:#fff;
+}
+
+.contacts_map_info_mail{
+		color:#fff;
+}
+
+.branches{
+	margin-bottom: 90px;
+}
+
+.branches_title{
+	text-align: center;
+	font-size: 36px;
+	text-transform: uppercase;
+	font-family: 'Proxima Nova Th';
+	font-weight: 100;
+	margin-bottom: 50px;
+}
+
+.branches_list{
+	display: flex;
+}
+
+.branches_list_item{
+	width: 25%;
+}
+
+.branches_list_item p{
+	margin: 0;
+}
+
+.branches_list_item_name{
+	font-family: 'Proxima Nova Th';
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.branches_list_item_phone{
+	margin: 30px 0;
+	display: inline-block;
+}
+
+.contacts_form{
+	background-color: #e5e5e5;
+	padding: 45px 100px 60px 100px;
+	margin-bottom: 65px;
+}
+
+.contacts_form_title{
+	display: block;
+	text-align: center;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-family: 'MADE';
+	margin-bottom: 50px;
+}
+
+.contacts_form_body{
+	display: flex;
+	justify-content: flex-start;
+	flex-flow: row wrap;
+}
+
+.contacts_form_body_item{
+  width: 374px;
+	margin-bottom: 30px;
+}
+
+.contacts_form_body_item:nth-child(odd){
+	margin-right: 45px;
+}
+
+.contacts_form_body_item label{
+	display: block;
+}
+
+.contacts_form_body_item input{
+	width: 100%;
+  height: 50px;
+	border: none;
+}
+
+.contacts_form_body_item.text{
+	margin-bottom: 55px;
+}
+
+.contacts_form_body_item.text input{
+  height: 192px;
+}
+
+.contacts_form_body_btn{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.contacts_form_body_btn input{
+	width: 272px;
+}
+
+.contacts_form_body_agreement{
+	width: 100%;
+	text-align: center;
+}
+
+.contacts_form_body_agreement_text{
+	margin: 0 auto;
+	font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  width: 432px;
+}
+
+.contacts_form_body_agreement_text a{
+	text-decoration: underline;
+}
+
+.reviews_list{
+	padding-top:20px;
+	display: flex;
+	flex-direction: column;
+	border-top: 1px solid rgba(0, 0, 0,0.141);
+}
+
+.reviews_list_item{
+
+}
+
+.reviews_list_item:nth-child(even){
+	background-color: #f5f5f5;
+}
+
+.reviews_list_item_info{
+	width: calc(100% - 525px);
 }
 
 /* //////////////////////////////////////////////////////// */

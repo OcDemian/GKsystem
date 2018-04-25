@@ -41,7 +41,13 @@
     <a target="_blank" href="/instructions_detail.php">Инструкция подробно</a>
   </li>
   <li>
-    <a target="_blank" href="/.php"></a>
+    <a target="_blank" href="/news.php">Новости</a>
+  </li>
+  <li>
+    <a target="_blank" href="/news_detail.php">Новость подробно</a>
+  </li>
+  <li>
+    <a target="_blank" href="/reviews.php">Отзывы</a>
   </li>
   <li>
     <a target="_blank" href="/contacts.php">Контакты</a>
