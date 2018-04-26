@@ -6,6 +6,36 @@ $('.stock_detail_carusel').slick({
   adaptiveHeight: true
 });
 
+$('.about_carusel').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  adaptiveHeight: true
+});
+
+$('body').on('click', '.reviews_list_item_btn', function(e){
+  e.preventDefault();
+  var elem = $(this);
+  var open_id='#'+elem.data('open');
+  var text_open=elem.data('open-text') || 'свернуть';
+  var text_close=elem.data('close-text') || 'читать дальше';
+  if($(open_id).hasClass('open')){
+    $(open_id).height('180');
+    $(open_id).removeClass('open');
+    setTimeout(function(){
+      elem.html(text_close);
+    }, 500);
+  }else{
+    haig=$(open_id+' p').height();
+    $(open_id).height(haig);
+    $(open_id).addClass('open');
+    setTimeout(function() {
+      elem.html(text_open);
+    }, 500);
+  }
+});
+
 ymaps.ready(init);
         var myMap,
             myPlacemark;

@@ -26,6 +26,9 @@
     <a href="/main.php">Главная</a>
   </li>
   <li>
+    <a target="_blank" href="/about.php">О компании</a>
+  </li>
+  <li>
     <a target="_blank" href="/stock.php">Акции</a>
   </li>
   <li>

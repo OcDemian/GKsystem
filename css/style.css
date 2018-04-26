@@ -315,6 +315,7 @@ h1{
 .stock_detail_carusel{
   width: 474px;
   position: relative;
+	height: max-content;
 }
 
 .stock_detail_carusel_item_img{
@@ -365,6 +366,55 @@ h1{
 
 .stock_detail_carusel .slick-dots li.slick-active button{
   background-color: #ffb717;
+}
+
+/* // */
+.big_carusel .slick-prev{
+  position: absolute;
+  left: 20px;
+  z-index: 10;
+  background-image: url("/img/black_arrow_left.png");
+  width: 21px;
+  height: 35px;
+}
+
+.big_carusel .slick-prev::before{
+  display: none;
+}
+
+.big_carusel .slick-next{
+  position: absolute;
+  right: 20px;
+  z-index: 10;
+  background-image: url("/img/black_arrow_left.png");
+  width: 21px;
+  height: 35px;
+  transform: rotate(180deg);
+}
+
+.big_carusel .slick-next::before{
+  display: none;
+}
+
+.big_carusel .slick-dots{
+  position: absolute;
+  bottom:25px;
+}
+
+.big_carusel .slick-dots li button{
+  background-color: #ffb717;
+  border-radius: 50%;
+  width: 17px;
+  height: 17px;
+
+}
+
+.big_carusel .slick-dots li button::before{
+  display: none;
+}
+
+.big_carusel .slick-dots li.slick-active button{
+  background-color: #000;
 }
 
 .stock_detail_btn{
@@ -590,6 +640,7 @@ h1{
 
 .contacts_form_body_item label{
 	display: block;
+	margin-bottom: 10px;
 }
 
 .contacts_form_body_item input{
@@ -634,22 +685,236 @@ h1{
 }
 
 .reviews_list{
-	padding-top:20px;
 	display: flex;
 	flex-direction: column;
 	border-top: 1px solid rgba(0, 0, 0,0.141);
+	margin-bottom: 40px;
 }
 
 .reviews_list_item{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+	margin-bottom: 30px;
+}
 
+.reviews_list_item_cont{
+	padding-top:20px;
+	padding-bottom: 40px;
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
 }
 
 .reviews_list_item:nth-child(even){
 	background-color: #f5f5f5;
+	padding: 20px 30px 40px 30px;
+	margin: 0 -30px 30px -30px;
 }
 
 .reviews_list_item_info{
 	width: calc(100% - 525px);
+}
+
+.reviews_list_item_info_name{
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+
+.reviews_list_item_info_text{
+	height: 180px;
+	overflow: hidden;
+	transition: 0.5s;
+	font-family: 'Proxima Nova Lt';
+	font-weight: 300;
+	margin-bottom: 30px;
+}
+
+.reviews_list_item_info_text p{
+	margin: 0;
+}
+
+.reviews_list_item_btn{
+	width: 272px;
+  border: 1px solid rgba(0, 0, 0, 0.271);
+	font-family: 'Proxima Nova Lt';
+	font-weight: 300;
+}
+
+.reviews_list_answer{
+	border-top:1px solid rgba(0, 0, 0, 0.141);
+  width: 811px;
+	padding-top: 30px;
+}
+
+.reviews_list_answer_name{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.reviews_list_answer_text{
+	font-family: 'Proxima Nova Lt';
+	font-weight: 300;
+}
+
+.reviews_list_more{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 100px;
+}
+
+.reviews_list_more_btn{
+  width: 272px;
+}
+
+.reviews_form{
+	background-color: #e5e5e5;
+	padding: 45px 315px 60px 315px;
+	margin-bottom: 65px;
+}
+
+.reviews_form_body{
+	display: flex;
+	flex-direction: column;
+}
+
+.reviews_form_body .contacts_form_body_item{
+	margin-right: 0;
+	width: 100%;
+}
+
+.reviews_text input{
+	height: 192px;
+}
+
+.contacts_form_body_item_file label{
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.contacts_form_body_item_file_list{
+	display: flex;
+	flex-direction:  column;
+	margin-bottom: 10px;
+}
+
+.contacts_form_body_item_file_list_item{
+	border-bottom: 1px solid rgba(0, 0, 0, 0.278);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 0;
+}
+
+.contacts_form_body_item_file_list_item:first-child{
+	border-top: 1px solid rgba(0, 0, 0, 0.278);
+}
+
+.contacts_form_body_item_file_list_item a{
+  border: 1px solid rgba(0, 0, 0, 0.278);
+  width: 98px;
+  height: 31px;
+	text-align: center;
+	line-height: 31px;
+	font-size: 14px;
+}
+
+.contacts_form_body_item_file_add{
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  line-height: 33px;
+  text-align: center;
+	background-color: #d5d5d5;
+	border: none;
+  width: 186px;
+  height: 33px;
+	font-family: 'Proxima Nova Rg';
+	font-weight: normal;
+	padding: 0;
+	text-transform: none;
+}
+
+.contacts_form_body_btn_reviews input{
+	padding: 0;
+  width: 272px;
+  height: 40px;
+	line-height: 40px;
+}
+
+.contacts_form_body_agreement_reviews{
+	margin-left: -30px;
+}
+
+.about_carusel.slick-slider.slick-dotted{
+	margin-bottom: 55px;
+}
+
+.about_carusel_text{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 60px;
+}
+
+.about_carusel_text_item{
+	width: 470px;
+	font-family: 'Proxima Nova Lt';
+	font-weight: 300;
+}
+
+.about_line_text{
+	position: relative;
+	font-family: "MADE";
+	text-transform: uppercase;
+	text-align: center;
+	padding: 48px 0;
+	margin-bottom: 60px;
+}
+
+.about_line_text::before{
+	content: '';
+	position: absolute;
+	top:0;
+	left:calc(50% - 65px);
+	width: 130px;
+	height: 1px;
+	background-color: #000;
+	display: block;
+}
+
+.about_line_text::after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left:calc(50% - 65px);
+	width: 130px;
+	height: 1px;
+	background-color: #000;
+	display: block;
+}
+
+.about_info_name{
+	font-size: 36px;
+	font-family: 'Proxima Nova Rg';
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.about_info{
+	display: flex;
+	justify-content: space-between;
+}
+
+.about_info_item{
+	width: 260px;
+}
+
+.about_info_item_title{
+	font-family: 'Proxima Nova Rg';
+	font-weight: bold;
+	padding-bottom: 18px;
+	border-bottom: 1px solid #000;
+	margin-bottom: 20px;
 }
 
 /* //////////////////////////////////////////////////////// */
