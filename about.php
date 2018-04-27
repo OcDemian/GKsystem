@@ -66,8 +66,21 @@
       <div class="about_info_item_text">
         Специально для любителей скидок, несколько раз в месяц мы делаем уникальную распродажу на различные группы товаров.
         Находите всегда актуальные горячие предложения в каталоге или регистрируйтесь, и получите первыми информацию о лучших предложениях
-        по электронной почте. 
+        по электронной почте.
       </div>
+    </div>
+  </div>
+  <div class="about_info_line"></div>
+  <div class="about_portfolio">
+    <h3 class="about_portfolio_h3">Портфолио</h3>
+    <div class="about_portfolio_carusel big_carusel">
+      <?
+      for ($i=0; $i < 4; $i++) {?>
+      <div class="about_portfolio_carusel_item">
+        <img src="/image/portfolio.png" alt="">
+        <span>Подпись к изображению</span>
+      </div>
+      <?}?>
     </div>
   </div>
   <div class="contacts_map" id="map" >

@@ -14,6 +14,23 @@ $('.about_carusel').slick({
   adaptiveHeight: true
 });
 
+$('.about_portfolio_carusel').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  adaptiveHeight: true
+});
+
+$('.main_news-stock_carusel').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  adaptiveHeight: true
+});
+
+
 $('body').on('click', '.reviews_list_item_btn', function(e){
   e.preventDefault();
   var elem = $(this);

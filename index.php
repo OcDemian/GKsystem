@@ -29,6 +29,15 @@
     <a target="_blank" href="/about.php">О компании</a>
   </li>
   <li>
+    <a target="_blank" href="/catalog.php">Каталог</a>
+  </li>
+  <li>
+    <a target="_blank" href="/catalog_list.php">Каталог список товаров</a>
+  </li>
+  <li>
+    <a target="_blank" href="/catalog_detail.php">Карточка товара</a>
+  </li>
+  <li>
     <a target="_blank" href="/stock.php">Акции</a>
   </li>
   <li>
@@ -51,6 +60,9 @@
   </li>
   <li>
     <a target="_blank" href="/reviews.php">Отзывы</a>
+  </li>
+  <li>
+    <a target="_blank" href="/partners.php">Партнёрам</a>
   </li>
   <li>
     <a target="_blank" href="/contacts.php">Контакты</a>
