@@ -1,3 +1,9 @@
+$( document ).ready(function() {
+    $('body').on('click', '.open_modal', function(){
+      console.log($(this).data('pay'));
+    });
+});
+
 $('.stock_detail_carusel').slick({
   dots: true,
   infinite: true,

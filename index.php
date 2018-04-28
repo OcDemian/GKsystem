@@ -38,6 +38,9 @@
     <a target="_blank" href="/catalog_detail.php">Карточка товара</a>
   </li>
   <li>
+    <a target="_blank" href="/delivery.php">Доставка и оплата</a>
+  </li>
+  <li>
     <a target="_blank" href="/stock.php">Акции</a>
   </li>
   <li>
@@ -67,7 +70,9 @@
   <li>
     <a target="_blank" href="/contacts.php">Контакты</a>
   </li>
-
+  <li>
+    <a target="_blank" href="/site_map.php">Карта сайта</a>
+  </li>
 </ul>
 
 <?include "footer.php";?>

@@ -44,6 +44,7 @@
           <a class="main_products_list_item_fon" href="#">
             <?=$text[$i]?>
           </a>
+          <div class="main_products_list_item_fon_blur" style="background-image: url('/image/main_products_<?=$i?>.png');"></div>
         </div>
       <?}?>
     </div>
