@@ -4,6 +4,7 @@ var pay_open = function(pay){
 };
 
 $( document ).ready(function() {
+  $('.phone_mask').mask("+7 (000) 000-00-00", {placeholder: "+7 (000) 000-00-00"});
 
     $('body').on('click', '.open_modal', function(e){
       e.preventDefault();

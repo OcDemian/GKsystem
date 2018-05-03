@@ -68,7 +68,7 @@
         </div>
         <div class="contacts_form_body_item">
           <label for="">Телефон</label>
-          <input type="text" name="" value="">
+          <input class="phone_mask" type="text" name="" value="">
         </div>
         <div class="contacts_form_body_item">
           <label for="">Адрес сайта</label>

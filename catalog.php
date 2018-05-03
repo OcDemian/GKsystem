@@ -19,7 +19,7 @@
       </div>
       <div class="catalog_top_btn">
         <a class="catalog_top_btn_price btn" href="#">Скачать прайс</a>
-        <a class="catalog_top_btn_zakaz btn" href="#">Заказать замер/монтаж</a>
+        <a class="catalog_top_btn_zakaz btn open_modal" data-view="installation_modal" href="#">Заказать замер/монтаж</a>
       </div>
     </div>
     <div class="main_products_list">

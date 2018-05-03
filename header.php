@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Самарский завод</title>
+    <link rel="stylesheet" type="text/css" href="/fonts/ProximaNova/stylesheet.css"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
-    <link rel="stylesheet" type="text/css" href="/fonts/ProximaNova/stylesheet.css"/>
     <link rel="stylesheet" type="text/css" href="/css/style.css"/>
   </head>
   <body>
