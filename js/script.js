@@ -1,7 +1,29 @@
+var pay_open = function(pay){
+  $('.modal_fon').fadeIn();
+  $('#'+pay).fadeIn();
+};
+
 $( document ).ready(function() {
-    $('body').on('click', '.open_modal', function(){
-      console.log($(this).data('pay'));
+
+    $('body').on('click', '.open_modal', function(e){
+      e.preventDefault();
+      pay = $(this).data('pay');
+      console.log(pay);
+      if(pay!=undefined){
+        pay_open($(this).data('pay'));
+      }else{
+        modal=$(this).data('view');
+        console.log(modal);
+        $('.modal_fon').fadeIn();
+        $('#'+modal).fadeIn();
+      }
     });
+});
+
+$('body').on('click', '.modal_body_close, .modal_fon', function(e){
+  e.preventDefault();
+  $('.modal_body').fadeOut();
+  $('.modal_fon').fadeOut();
 });
 
 $('.stock_detail_carusel').slick({

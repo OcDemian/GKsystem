@@ -123,6 +123,75 @@ h1{
   color: #fff;
 }
 
+.modal_fon{
+	position: fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right: 0;
+  background-color: rgba(0, 0, 0, 0.369);
+	display: none;
+	z-index: 100;
+}
+
+.modal_fon:hover{
+	cursor: pointer;
+}
+
+.modal_body_close{
+	position: absolute;
+	top: 20px;
+	right: 25px;
+	font-family: 'Proxima Nova Lt';
+	font-weight: 300;
+  text-decoration: underline;
+}
+
+.modal_body{
+	position: fixed;
+	z-index: 102;
+	display: none;
+  border-width: 1px;
+  border-color: rgb(204, 204, 204);
+  border-style: solid;
+  background-color: rgb(255, 255, 255);
+	top:10%;
+	text-align: left;
+}
+
+.modal_body_pay{
+	top: 302px;
+	left:calc(50% - 290px);
+  width: 580px;
+}
+
+.modal_body_set{
+	padding: 65px;
+	position: relative;
+}
+
+.modal_body_title{
+	font-family: 'Proxima Nova Rg';
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+
+.modal_body_text{
+	font-family: 'Proxima Nova Lt';
+	font-weight: 300;
+}
+
+.modal_body_form{
+  background-color: rgb(225, 225, 225);
+  width: 581px;
+	top: 100px;
+	left: calc(50% - 290px);
+}
+
+.modal_body_form .modal_body_set{
+	padding: 60px 105px;
+}
+
 .header_top{
   padding-top: 15px;
   padding-left: 15px;
@@ -1425,6 +1494,7 @@ content: "— ";
 .delivery_advantages{
 	display: flex;
 	justify-content: space-between;
+	margin-top: 70px;
 	margin-bottom: 88px;
 }
 
@@ -1504,6 +1574,33 @@ content: "— ";
 .delivery_conditions_from_rezult span{
 	font-size: 36px;
 }
+
+.site_map{
+	display: flex;
+	margin-bottom: 100px;
+}
+
+.site_map_big{
+	width: 270px;
+	margin-right: 110px;
+  text-decoration: underline;
+  line-height: 3;
+	padding-left: 0;
+}
+
+.site_map_mini{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.site_map_mini_list{
+	text-decoration: underline;
+	font-family: 'Proxima Nova Lt';
+	font-weight: 300;
+  line-height: 3;
+}
+
 /* //////////////////////////////////////////////////////// */
 .footer{
   padding-top: 90px;

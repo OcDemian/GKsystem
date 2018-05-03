@@ -49,7 +49,7 @@
         изготовленных с помощью метода сваривания, в строительстве, а также армировании металлических конструкций из бетона.
       </div>
       <div class="catalog_list_top_target_btn">
-        <a class="catalog_list_top_target_btn_link btn" href="#">Оформить заказ</a>
+        <a class="catalog_list_top_target_btn_link btn open_modal" href="#" data-view="by_modal">Оформить заказ</a>
       </div>
     </div>
     <div class="catalog_list_top_can">
@@ -120,12 +120,24 @@
   <div class="about_info_line"></div>
   <div class="catalog_pay">
     <h2 class="main_products_title">Способы оплаты</h2>
-    <div class="catalog_pay_list">
+    <div class="catalog_pay_list catalog_pay_list_delivery">
       <?
+      $pay=array('non_cash', 'cash', 'online', 'kiber');
       $name=array('Безналичная оплата', 'Наличными <br /> при доставке товара', 'Онлайн-оплата  картой', 'Оплата кибервалютой');
       for ($i=0; $i < 4; $i++) {?>
         <div class="catalog_pay_list_item">
-          <?=$name[$i]?>
+          <a class="open_modal" data-pay="pay_<?=$pay[$i]?>"><?=$name[$i]?></a>
+        </div>
+        <div class="modal_body modal_body_pay" id="pay_<?=$pay[$i]?>">
+          <div class="modal_body_set">
+            <a class="modal_body_close" href="#">закрыть</a>
+            <div class="modal_body_title">
+              <?=$name[$i]?>
+            </div>
+            <div class="modal_body_text">
+              Заключение Договора на оказание услуг и оплата на основе выставляемого вам счета.
+            </div>
+          </div>
         </div>
       <?}?>
     </div>

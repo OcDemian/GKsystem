@@ -25,7 +25,7 @@
           <div class="header_info">
             <div class="header_info_contacts">
               <a class="header_info_contacts_phone" href="#">+7 (846) 200-70-70</a>
-              <a class="btn_orange header_info_contacts_btn" href="#">Заказать звонок</a>
+              <a class="btn_orange header_info_contacts_btn open_modal" data-view="feedback_modal" href="#">Заказать звонок</a>
             </div>
             <div class="header_info_menu">
               <ul class="header_info_menu_body">

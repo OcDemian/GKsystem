@@ -13,13 +13,24 @@
   </div>
   <h1>Доставка и оплата</h1>
   <div class="delivery">
-    <div class="catalog_pay_list catalog_pay_list_delivery">
+    <div class="catalog_pay_list">
       <?
       $pay=array('non_cash', 'cash', 'online', 'kiber');
       $name=array('Безналичная оплата', 'Наличными <br /> при доставке товара', 'Онлайн-оплата  картой', 'Оплата кибервалютой');
       for ($i=0; $i < 4; $i++) {?>
         <div class="catalog_pay_list_item">
-          <a class="open_modal" data-pay="<?=$pay[$i]?>"><?=$name[$i]?></a>
+          <a class="open_modal" data-pay="pay_<?=$pay[$i]?>"><?=$name[$i]?></a>
+        </div>
+        <div class="modal_body modal_body_pay" id="pay_<?=$pay[$i]?>">
+          <div class="modal_body_set">
+            <a class="modal_body_close" href="#">закрыть</a>
+            <div class="modal_body_title">
+              <?=$name[$i]?>
+            </div>
+            <div class="modal_body_text">
+              Заключение Договора на оказание услуг и оплата на основе выставляемого вам счета.
+            </div>
+          </div>
         </div>
       <?}?>
     </div>
