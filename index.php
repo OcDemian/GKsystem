@@ -75,4 +75,13 @@
   </li>
 </ul>
 
+<form enctype="multipart/form-data" action="form.php" method="post">
+  <input type="text" name="name" value="">
+  <input type="text" name="compony" value="">
+  <input type="text" name="rev" value="">
+  <input type="file" name="files[]" value="">
+  <input type="file" name="files[]" value="">
+  <input type="submit" name="" value="Субмит">
+</form>
+
 <?include "footer.php";?>
